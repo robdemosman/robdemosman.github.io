@@ -67,16 +67,70 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
     <p>In grote lijnen komt het erop neer dat je met git aanpassingen - die je aan bv een website of een programma dat je
       aan het coderen bent - kunt bijhouden en je op elk gewenst moment deze weer ongedaan kunt maken en/of kunt opzoeken wat je ooit hebt veranderd.
-      Elke keer dat je <code class='text-info'>commit</code> (je wijzigingen opslaat) wordt er een snapshot gemaakt van de huidige staat van je project.
-      Met git werk je in principe lokaal op je computer en als je klaar bent met een bepaalde stap binnen je project dan kun je via de opdracht <code class='text-info'>commit</code>
+      Elke keer dat je <code class='text-white'>commit</code> (je wijzigingen opslaat) wordt er een snapshot gemaakt van de huidige staat van je project.
+      Met git werk je in principe lokaal op je computer en als je klaar bent met een bepaalde stap binnen je project dan kun je via de opdracht <code class='text-white'>commit</code>
       deze aanpasingen opslaan in je project.<br>
-      Dit opslaan gaat in enkele fasen:
-      - Als je met bv <a href="https://atom.io/" target="_blank">Atom werkt</a> dan sla je met Ctrl+s je wijzigingen lokaal op. Atom signaleert dat je nu iets veranderd
-      hebt en het gewijzigde bestand staat nu bij de unstaged changes.
-      - Als je nu bv in meerdere bestanden aanpassingen hebt gedaan en je wilt gaan testen of het allemaal functioneert dan moet je deze eerst met het commando Stage deze
-      klaar zetten om je origineel project bij te werken.
-      - Nu kun je met <code class='text-info'>Commit</code> deze wijzigingen nog met een uitleg wat je gedaan hebt als 1 geheel klaarzetten om op te slaan. Dit gebeurt allemaal nog lokaal.
-      - Als laatste druk je op Push en dan gaan de wijzigingen naar de server waar het originele project staat.
+
+
+      <div class="container">
+  <h2>Dit opslaan gaat in enkele fasen:</h2>
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Ctrl+s
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Als je met bv <a href="https://atom.io/" target="_blank">Atom</a> werkt dan sla je met Ctrl+s je wijzigingen lokaal op. Atom signaleert dat je nu iets veranderd
+          hebt en het gewijzigde bestand staat nu bij de unstaged changes.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Stage
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Als je nu bv in meerdere bestanden aanpassingen hebt gedaan en je wilt gaan testen of het allemaal functioneert dan moet je deze eerst met het commando Stage deze
+          klaar zetten om je origineel project bij te werken.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Commit
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Nu kun je met <code class='text-white'>Commit</code> deze wijzigingen nog met een uitleg wat je gedaan hebt als 1 geheel klaarzetten om op te slaan. Dit gebeurt allemaal nog lokaal.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Push
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Als laatste druk je op Push en dan gaan de wijzigingen naar de server waar het originele project staat.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
     </p>
     <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Branches</p>
