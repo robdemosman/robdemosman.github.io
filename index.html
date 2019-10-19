@@ -56,6 +56,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">Git?</span></h1>
     <p>Ik ben zelf nieuw met het fenomeen Git en probeer hier de kernpunten samen te vatten tijdens mijn ontdekkingstocht.
+      Als bron heb ik dit boek gebruikt: <a href="https://git-scm.com/book/nl/v2" target="_blank">Pro Git</a>
       Deze website is tevens voor mij een test om wat te oefenen met Git.
     </p>
   </header>
@@ -64,11 +65,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="basis">
     <h2 class="w3-text-light-grey">Basis</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>In grote lijnen komt het erop neer dat je met git aanpassingen die je aan bv een website of een programma dat je
-      aan het coderen bent kunt bijhouden je op elk gewenst moment deze weer ongedaan kunt maken en/of kunt opzoeken wat je ooit hebt veranderd.
+    <p>In grote lijnen komt het erop neer dat je met git aanpassingen - die je aan bv een website of een programma dat je
+      aan het coderen bent - kunt bijhouden en je op elk gewenst moment deze weer ongedaan kunt maken en/of kunt opzoeken wat je ooit hebt veranderd.
       Elke keer dat je <code>commit</code> (je wijzigingen opslaat) wordt er een snapshot gemaakt van de huidige staat van je project.
       Met git werk je in principe lokaal op je computer en als je klaar bent met een bepaalde stap binnen je project dan kun je via de opdracht <code>commit</code>
-      deze aanpasingen opslaan in je project. 
+      deze aanpasingen opslaan in je project.
+      Dit opslaan gaat in enkele fasen:
+      - Als je met bv <a href="https://atom.io/" target="_blank">Atom werkt</a> dan sla je met Ctrl+s je wijzigingen lokaal op. Atom signaleert dat je nu iets veranderd
+      hebt en het gewijzigde bestand staat nu bij de unstaged changes.
+      - Als je nu bv in meerdere bestanden aanpassingen hebt gedaan en je wilt gaan testen of het allemaal functioneert dan moet je deze eerst met het commando Stage deze
+      klaar zetten om je origineel project bij te werken.
+      - Nu kun je met <div class='text-info'>Commit</div> deze wijzigingen nog met een uitleg wat je gedaan hebt als 1 geheel klaarzetten om op te slaan. Dit gebeurt allemaal nog lokaal.
+      - Als laatste 
     </p>
     <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Branches</p>
